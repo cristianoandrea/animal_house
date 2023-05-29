@@ -213,7 +213,7 @@ textarea {
       <div class="row" id="app"></div>
     </div>
     <script>
-      const api_url = "http://site222301.tw.cs.unibo.it/api/user/";
+      const api_url = "https://site222301.tw.cs.unibo.it/api/user/";
 
       async function getUser() {
         const response = await fetch(api_url, {
@@ -273,7 +273,7 @@ const formattedDate = `${birthdate.getDate()}/${birthdate.getMonth() + 1}/${birt
       getUser();
 
       async function deleteUser(id) {
-        fetch("http://site222301.tw.cs.unibo.it/api/user/" + id, {
+        fetch("https://site222301.tw.cs.unibo.it/api/user/" + id, {
           method: "DELETE",
         });
 
@@ -300,7 +300,7 @@ const formattedDate = `${birthdate.getDate()}/${birthdate.getMonth() + 1}/${birt
 
       console.log(json)
 
-      fetch("http://site222301.tw.cs.unibo.it/api/user/profile", {
+      fetch("https://site222301.tw.cs.unibo.it/api/user/profile", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -353,7 +353,7 @@ const formattedDate = `${birthdate.getDate()}/${birthdate.getMonth() + 1}/${birt
         sesso: value.gender
       };
 
-      fetch("http://site222301.tw.cs.unibo.it/api/user/signup", {
+      fetch("https://site222301.tw.cs.unibo.it/api/user/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

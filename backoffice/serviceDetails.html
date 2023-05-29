@@ -199,7 +199,7 @@
       const city = urlParams.get("name");
       console.log(city);
 
-      const api_url = "http://site222301.tw.cs.unibo.it/api/service/filter";
+      const api_url = "https://site222301.tw.cs.unibo.it/api/service/filter";
       async function getService(input) {
         const response = await fetch(api_url, {
           method: "POST",
@@ -242,7 +242,7 @@
       getService(city);
 
       async function deleteService(id) {
-      fetch("http://site222301.tw.cs.unibo.it/api/service/" + id, {
+      fetch("https://site222301.tw.cs.unibo.it/api/service/" + id, {
         method: "DELETE",
       });
 
@@ -288,7 +288,7 @@
         
       };
 
-      fetch("http://site222301.tw.cs.unibo.it/api/service/create", {
+      fetch("https://site222301.tw.cs.unibo.it/api/service/create", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

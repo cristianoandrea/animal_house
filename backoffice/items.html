@@ -229,7 +229,7 @@
     <div class="row" id="app"></div>
   </div>
   <script>
-    const api_url = "http://site222301.tw.cs.unibo.it/api/item/";
+    const api_url = "https://site222301.tw.cs.unibo.it/api/item/";
 
     async function getItems() {
       const response = await fetch(api_url, {
@@ -305,7 +305,7 @@
     getItems();
 
     async function deleteOne(id) {
-      fetch("http://site222301.tw.cs.unibo.it/api/item/delete/" + id, {
+      fetch("https://site222301.tw.cs.unibo.it/api/item/delete/" + id, {
         method: "PATCH",
       })
         .then((res) => res.json())
@@ -320,7 +320,7 @@
 
     async function addOne(id) {
       const response = await fetch(
-        "http://site222301.tw.cs.unibo.it/api/item/add/" + id,
+        "https://site222301.tw.cs.unibo.it/api/item/add/" + id,
         {
           method: "PATCH",
         }
@@ -329,7 +329,7 @@
     }
 
     async function deleteItem(id) {
-      fetch("http://site222301.tw.cs.unibo.it/api/item/" + id, {
+      fetch("https://site222301.tw.cs.unibo.it/api/item/" + id, {
         method: "DELETE",
       });
 
@@ -372,7 +372,7 @@
         disponibilità: value.count
       };
 
-      fetch("http://site222301.tw.cs.unibo.it/api/item/create", {
+      fetch("https://site222301.tw.cs.unibo.it/api/item/create", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -415,7 +415,7 @@
 
       console.log(json)
 
-      fetch("http://site222301.tw.cs.unibo.it/api/item/update", {
+      fetch("https://site222301.tw.cs.unibo.it/api/item/update", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

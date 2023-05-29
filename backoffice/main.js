@@ -1,5 +1,5 @@
 async function deleteOne(id) {
-    fetch( "http://site222301.tw.cs.unibo.it/api/item/delete/" + id,
+    fetch( "https://site222301.tw.cs.unibo.it/api/item/delete/" + id,
       {
         method: "PATCH",
       })
@@ -14,7 +14,7 @@ async function deleteOne(id) {
 
   async function addOne(id) {
     const response = await fetch(
-      "http://site222301.tw.cs.unibo.it/api/item/add/" + id,
+      "https://site222301.tw.cs.unibo.it/api/item/add/" + id,
       {
         method: "PATCH",
       }

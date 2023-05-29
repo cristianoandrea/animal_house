@@ -157,7 +157,7 @@
       <div class="row" id="app"></div>
     </div>
     <script>
-      const api_url = "http://site222301.tw.cs.unibo.it/api/note/";
+      const api_url = "https://site222301.tw.cs.unibo.it/api/note/";
 
       async function getNotes() {
         const response = await fetch(api_url, {
@@ -192,7 +192,7 @@
       getNotes();
 
       async function deleteItem(id) {
-        fetch("http://site222301.tw.cs.unibo.it/api/note/" + id, {
+        fetch("https://site222301.tw.cs.unibo.it/api/note/" + id, {
           method: "DELETE",
         });
 
